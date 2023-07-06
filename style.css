@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: green;
+}
+
+.main{
+    margin-top: 40px;
+}
+
+
+
+.digits{
+    max-width: 1200px;
+    width: 700px;
+    margin: 0 auto;
+    height: 60vh;
+
+}
+
+.no{
+    width: 150px;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 35px;
+    border: 2px black solid;
+    background-color: rgb(37, 35, 35);
+    color: rgb(188, 102, 102);
+    padding: 0 2px 0 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.display{
+    border: 2px solid black;
+    width: 600px;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 20vh;
+    background-color: rgb(81, 75, 75);
+}
+
+/* to work on adjusting view on smaller screens */
