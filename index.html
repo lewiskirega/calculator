@@ -10,28 +10,30 @@
     <div class="main">
         <div class="display">
             <span id="num1-el"></span>
-            <span id="num2-el"></span>
+            <!-- <span id="digit"></span> -->
+            <!-- <span id="num1-el"></span> -->
+            <span id="sum-el">=</span>
             <br>
         </div>
         <br>
-        <div class="digits">
-            <button type="button" class="no">1</button>
-            <button type="button" class="no">2</button>
-            <button type="button" class="no">3</button>
-            <button type="button" class="no">+</button>
-            <button type="button" class="no">4</button>
-            <button type="button" class="no">5</button>
-            <button type="button" class="no">6</button>
-            <button type="button" class="no">-</button>
-            <button type="button" class="no">7</button>
-            <button type="button" class="no">8</button>
-            <button type="button" class="no">9</button>
-            <button type="button" class="no">/</button>
-            <button type="button" class="no">.</button>
-            <button type="button" class="no">0</button>
+        <div class="digits" id="digits">
+            <button type="button" class="no" id="digit-el"  onclick="number()">1</button>
+            <button type="button" class="no" id="digit" onclick="number()">2</button>
+            <button type="button" class="no" id="digit" onclick="number()">3</button>
+            <button type="button" class="no" onclick="add()" id="add">+</button>
+            <button type="button" class="no" id="digit" onclick="number()">4</button>
+            <button type="button" class="no" id="digit" onclick="number()">5</button>
+            <button type="button" class="no" id="digit">6</button>
+            <button type="button" class="no" onclick="subtract()">-</button>
+            <button type="button" class="no" id="digit">7</button>
+            <button type="button" class="no" id="digit">8</button>
+            <button type="button" class="no" id="digit">9</button>
+            <button type="button" class="no" onclick="divide()">/</button>
+            <button type="button" class="no" id="digit">.</button>
+            <button type="button" class="no" id="digit">0</button>
             <button type="button" class="no" id="sum-el">=</button>
-            <button type="button" class="no">*</button>
-            <script src="scrypt.js"></script>
+            <button type="button" class="no" onclick="multiply()">*</button>
+            <script src="script.js"></script>
         </div>
     </div>
 </body>
