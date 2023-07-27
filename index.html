@@ -5,35 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="main">
-        <div class="display">
-            <span id="num1-el"></span>
-            <!-- <span id="digit"></span> -->
-            <!-- <span id="num1-el"></span> -->
-            <span id="sum-el">=</span>
-            <br>
-        </div>
+        <section class="display-c">
+            <input type="text" id="results" class="display" aria-hidden="">
+            <input type="button" class="clr" value="c" onclick="clr()">
+        </section>
         <br>
         <div class="digits" id="digits">
-            <button type="button" class="no" id="digit-el"  onclick="number()">1</button>
-            <button type="button" class="no" id="digit" onclick="number()">2</button>
-            <button type="button" class="no" id="digit" onclick="number()">3</button>
-            <button type="button" class="no" onclick="add()" id="add">+</button>
-            <button type="button" class="no" id="digit" onclick="number()">4</button>
-            <button type="button" class="no" id="digit" onclick="number()">5</button>
-            <button type="button" class="no" id="digit">6</button>
-            <button type="button" class="no" onclick="subtract()">-</button>
-            <button type="button" class="no" id="digit">7</button>
-            <button type="button" class="no" id="digit">8</button>
-            <button type="button" class="no" id="digit">9</button>
-            <button type="button" class="no" onclick="divide()">/</button>
-            <button type="button" class="no" id="digit">.</button>
-            <button type="button" class="no" id="digit">0</button>
-            <button type="button" class="no" id="sum-el">=</button>
-            <button type="button" class="no" onclick="multiply()">*</button>
-            <script src="script.js"></script>
+            <input type="button" class="no" value="1" onclick="dis('1')">
+            <input type="button" class="no" value="2" onclick="dis('2')">
+            <input type="button" class="no" value="3" onclick="dis('3')">
+            <input type="button" class="no" value="/" onclick="dis(' /')">
+            <input type="button" class="no" value="4" onclick="dis('4')">
+            <input type="button" class="no" value="5" onclick="dis('5')">
+            <input type="button" class="no" value="6" onclick="dis('6')">
+            <input type="button" class="no" value="-" onclick="dis(' - ')">
+            <input type="button" class="no" value="7" onclick="dis('7')">
+            <input type="button" class="no" value="8" onclick="dis('8')">
+            <input type="button" class="no" value="9" onclick="dis('9')">
+            <input type="button" class="no" value="+" onclick="dis(' + ')">
+            <input type="button" class="no" value="." onclick="dis('.')">
+            <input type="button" class="no" value="0" onclick="dis('0')">
+            <input type="button" class="no" value="*" onclick="dis(' * ')">
+            <input type="button" class="no" value="=" onclick="solve()">
         </div>
     </div>
 </body>

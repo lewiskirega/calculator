@@ -2,10 +2,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: green;
+    box-sizing: border-box;
 }
 
 .main{
     margin-top: 40px;
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 30px auto;
+    height: 100vh;
 }
 
 
@@ -14,8 +19,6 @@ body {
     max-width: 1200px;
     width: 700px;
     margin: 0 auto;
-    height: 60vh;
-
 }
 
 .no{
@@ -28,16 +31,45 @@ body {
     color: rgb(188, 102, 102);
     padding: 0 2px 0 2px;
     cursor: pointer;
+    border-radius: 0 20px;
     text-align: center;
 }
 
 .display{
     border: 2px solid black;
-    width: 600px;
-    margin: 0 auto;
-    max-width: 1200px;
+    width: 100%;
+    margin-right: 10px;
     height: 20vh;
     background-color: rgb(81, 75, 75);
+    border-radius: 0 20px;
+    font-size: 30px;
+    text-align: left;
+    padding: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-/* to work on adjusting view on smaller screens */
+.clr{
+
+    width: 150px;
+    height: auto;
+    border-radius: 0 20px;
+    margin: 0 auto;
+    font-size: 35px;
+    border: 2px black solid;
+    background-color: rgb(37, 35, 35);
+    color: rgb(188, 102, 102);
+    padding: 0 2px 0 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.display-c{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 620px;
+    max-width: 700px;
+}
+
